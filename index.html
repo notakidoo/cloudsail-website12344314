@@ -29,14 +29,14 @@
         }
 
         /* --- Header (HUD Style) --- */
-        header {
-            padding: 1.5rem 5%;
-            display: flex;
-            align-items: center;
-            position: relative; /* Needed for centering the status */
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            height: 60px;
-        }
+       header {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between; /* This pushes items to far edges */
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    height: 60px;
+}
 
         .brand {
             font-weight: 800;
@@ -57,22 +57,19 @@
         }
 
         /* Absolute Centering for the Status */
-        .status-container {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            color: var(--accent);
-            background: rgba(0, 119, 190, 0.1);
-            padding: 8px 20px;
-            border-radius: 20px;
-            border: 1px solid rgba(0, 119, 190, 0.2);
-        }
+      .status-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    background: rgba(0, 119, 190, 0.1);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 119, 190, 0.2);
+}
 
         .dot { 
             width: 8px; 
@@ -238,3 +235,4 @@
 </body>
 
 </html>
+
