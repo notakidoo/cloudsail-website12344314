@@ -8,7 +8,6 @@
     
     <style>
         :root {
-            /* Brand Palette */
             --bg: #121212;       /* Void Grey */
             --card-bg: #1A232C;  /* Hull Navy */
             --text: #F5F5F5;     /* Cloud White */
@@ -28,48 +27,45 @@
             min-height: 100vh;
         }
 
-        /* --- Header (HUD Style) --- */
-       header {
-    padding: 1.5rem 5%;
-    display: flex;
-    justify-content: space-between; /* This pushes items to far edges */
-    align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    height: 60px;
-}
+        /* --- Header --- */
+        header {
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            height: 60px;
+        }
 
         .brand {
             font-weight: 800;
             font-size: 1.5rem;
             letter-spacing: 2px;
             color: var(--text);
-            z-index: 2; /* Keeps it clickable */
             display: flex;
             align-items: center;
             gap: 15px;
         }
 
-        /* Optional: If you upload your logo as 'logo.png', this displays it. 
-           If not, it just hides the image tag safely. */
         .brand img {
             height: 40px;
             width: auto;
         }
 
-        /* Absolute Centering for the Status */
-      .status-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    color: var(--accent);
-    background: rgba(0, 119, 190, 0.1);
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 119, 190, 0.2);
-}
+        /* Status Indicator */
+        .status-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: var(--accent);
+            background: rgba(0, 119, 190, 0.1);
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 119, 190, 0.2);
+        }
 
         .dot { 
             width: 8px; 
@@ -99,7 +95,6 @@
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
-            /* Gradient text effect */
             background: linear-gradient(to right, #fff, #8899A6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -207,22 +202,6 @@
         </div>
     </main>
 
-        <div class="grid">
-            <div class="card">
-                <h3>Zero Trust Security</h3>
-                <p>Management interfaces and control planes are strictly air-gapped behind encrypted tunnels and key-based authentication.</p>
-            </div>
-            <div class="card">
-                <h3>Dedicated Isolation</h3>
-                <p>Workloads execute in fully segregated, hardware-level environments to prevent resource contention and ensure stability.</p>
-            </div>
-            <div class="card">
-                <h3>Edge Acceleration</h3>
-                <p>Traffic is routed through a global delivery network to mitigate attacks and optimize latency before reaching the origin.</p>
-            </div>
-        </div>
-    </main>
-
     <footer>
         <div class="legal">
             <p><strong>© 2025 The Cloudsail Project. London / Phoenix.</strong></p>
@@ -233,6 +212,4 @@
     </footer>
 
 </body>
-
 </html>
-
